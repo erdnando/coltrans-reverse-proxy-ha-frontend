@@ -25,4 +25,4 @@ RUN mkdir -p /run/haproxy/
 #https://tsh.io/blog/how-to-scale-websocket/
 
 
-EXPOSE 81:81
+EXPOSE 80:80
