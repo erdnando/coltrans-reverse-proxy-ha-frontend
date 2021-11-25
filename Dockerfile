@@ -1,7 +1,7 @@
 FROM node:14 as builder
 
 ADD "https://www.random.org/cgi-bin/randbyte?nbytes=10&format=h" skipcache
-RUN git clone https://github.com/erdnando/coltrans-reverse-proxy-ha.git /opt/ha_config
+RUN git clone https://github.com/erdnando/coltrans-reverse-proxy-ha-frontend.git /opt/ha_config
 
 WORKDIR /opt/ha_config
 
@@ -25,4 +25,4 @@ RUN mkdir -p /run/haproxy/
 #https://tsh.io/blog/how-to-scale-websocket/
 
 
-EXPOSE 80:80
+EXPOSE 81:81
