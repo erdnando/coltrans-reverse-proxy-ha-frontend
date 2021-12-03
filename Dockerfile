@@ -10,8 +10,6 @@ FROM haproxy
 
 COPY --from=builder /opt/ha_config/ /usr/local/etc/haproxy
 
-#COPY haproxy.cfg /usr/local/etc/haproxy
-
 USER root
 RUN mkdir -p /run/haproxy/
 #docker rmi image erdnando/coltrans-reverse-proxy-ha
